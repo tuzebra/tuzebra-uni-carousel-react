@@ -8,7 +8,7 @@ const DefaultDecorators = [
       render() {
         return (
           <button
-            className={'decorator-btn '+(this.props.currentSlide === 0 ? '' : 'active')}
+            style={this.getButtonStyles(this.props.currentSlide === 0)}
             onClick={this.handleClick}>PREV</button>
         )
       },
