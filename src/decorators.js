@@ -55,16 +55,14 @@ const DefaultDecorators = [
         var self = this;
         var indexes = this.getIndexes(self.props.slideCount, self.props.slidesToScroll);
         return (
-          <ul style={self.getListStyles()}>
+          <ul className="slider-nav-dot-wrap">
             {
               indexes.map(function(index) {
                 return (
-                  <li style={self.getListItemStyles()} key={index}>
-                    <button
-                      style={self.getButtonStyles(self.props.currentSlide === index)}
-                      onClick={self.props.goToSlide.bind(null, index)}>
-                      &bull;
-                    </button>
+                  <li key={index}>
+                    <a
+                      className={'slider-nav-dot '+(self.props.currentSlide === index ? 'active' : '')} 
+                      onClick={self.props.goToSlide.bind(null, index)}></a>
                   </li>
                 )
               })
