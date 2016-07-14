@@ -16,10 +16,15 @@ var webpackDistConfig = require('./webpack.dist.config.js'),
     webpackDevConfig = require('./webpack.config.js');
 
 gulp.task('open', function(){
-  open('',{url: 'http://localhost:8080/webpack-dev-server/'});
+  gulp.src('./demo/index.html')
+  .pipe(open('',{url: 'http://localhost:8080/webpack-dev-server/'}));
 });
 
-gulp.task("babel", function() {
+gulp.task('clean', function(cb){
+  del(['lib'], cb)
+});
+
+gulp.task("babel", ['clean'], function() {
   return gulp.src('src/*.js')
         .pipe(babel())
         .pipe(gulp.dest('lib'));
@@ -54,5 +59,5 @@ gulp.task("karma", ['lint'], function() {
 });
 
 gulp.task('test', ['lint', 'karma']);
-gulp.task('build', ['babel']);
+gulp.task('build', ['clean', 'babel']);
 gulp.task('default', ['webpack-dev-server', 'open']);
