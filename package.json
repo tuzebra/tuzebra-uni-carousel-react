@@ -1,7 +1,7 @@
 {
-  "name": "uni-carousel-react",
+  "name": "tuzebra-uni-carousel-react",
   "version": "0.3.8",
-  "description": "A custom edited version of nuka-carousel",
+  "description": "Fork from Uni Carousel React, A custom edited version of nuka-carousel",
   "main": "index.js",
   "dependencies": {
     "exenv": "^1.2.0",
