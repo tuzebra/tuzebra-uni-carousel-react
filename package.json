@@ -55,11 +55,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhilashsajeev/uni-carousel-react.git"
+    "url": "https://github.com/tuzebra/uni-carousel-react.git"
   },
   "keywords": [
     "carousel",
-    "uni-carousel-react",
+    "tuzebra-uni-carousel-react",
     "react-component"
   ],
   "author": {
@@ -67,28 +67,6 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abhilashsajeev/uni-carousel-react/issues"
-  },
-  "homepage": "https://github.com/abhilashsajeev/uni-carousel-react",
-  "gitHead": "d08fb16c6de1ea46086c70f343dcec2915b2598c",
-  "_id": "uni-carousel-react@0.1.16",
-  "_shasum": "b1a23d6f39cb63a5926924a5a9705ed091ac7fcc",
-  "_from": "uni-carousel-react@>=0.1.16 <0.2.0",
-  "_npmVersion": "1.4.29",
-  "_npmUser": {
-    "name": "abhilashsajeev",
-    "email": "abhilash@qburst.com"
-  },
-  "maintainers": [
-    {
-      "name": "abhilashsajeev",
-      "email": "abhilash@qburst.com"
-    }
-  ],
-  "dist": {
-    "shasum": "b1a23d6f39cb63a5926924a5a9705ed091ac7fcc",
-    "tarball": "https://registry.npmjs.org/uni-carousel-react/-/uni-carousel-react-0.1.16.tgz"
-  },
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/uni-carousel-react/-/uni-carousel-react-0.1.16.tgz"
+    "url": "https://github.com/tuzebra/uni-carousel-react/issues"
+  }
 }
